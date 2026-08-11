@@ -2,7 +2,7 @@
   "manifest_version": "1.0",
   "name": "LibreOffice",
   "description": "The free and open source office suite.",
-  "version": "25.2.0",
+  "version": "26.2.4.2",
   "image": "ghcr.io/containerpak/libreoffice:main",
   "binaries": ["/usr/bin/libreoffice"],
   "desktop_entries": ["/usr/share/applications/libreoffice-startcenter.desktop"],
