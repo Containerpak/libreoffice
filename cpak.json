@@ -1,26 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "LibreOffice",
   "description": "The free and open source office suite.",
   "version": "26.2.4.2",
-  "image": "ghcr.io/containerpak/libreoffice:main",
-  "binaries": ["/usr/bin/libreoffice"],
-  "desktop_entries": ["/usr/share/applications/libreoffice-startcenter.desktop"],
+  "image": "ghcr.io/containerpak/libreoffice@sha256:3c5b9d745d2689bf60b5db852f9881db3a6a175409d00bed044f9e75d1e0c834",
+  "binaries": [
+    "/usr/bin/libreoffice"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/libreoffice-startcenter.desktop"
+  ],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": true,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -33,7 +32,10 @@
     "notification": false,
     "openURI": false,
     "filesystem": [
-      {"path": "home", "access": "read-write"}
+      {
+        "path": "home",
+        "access": "read-write"
+      }
     ],
     "env": [],
     "network": true,
@@ -42,7 +44,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
