@@ -4,7 +4,7 @@
   "name": "LibreOffice",
   "description": "The free and open source office suite.",
   "version": "26.2.4.2",
-  "image": "ghcr.io/containerpak/libreoffice@sha256:e33cabfdc829e696e8e686954a7d3ab8074688ce61068d1f21ff7679734e42f2",
+  "image": "ghcr.io/containerpak/libreoffice@sha256:b98d020ba003977bf6145e48d2aab2e084aebac59ba9cd72863ebc15530114b4",
   "binaries": [
     "/usr/bin/libreoffice"
   ],
